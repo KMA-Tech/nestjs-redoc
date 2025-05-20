@@ -92,7 +92,7 @@ export class RedocModule {
     // create helper to convert metadata to JSON
     const hbs = handlebars.create({
       helpers: {
-        toJSON: function (object: any) {
+        toJSON: function (object: Record<string, unknown>) {
           return JSON.stringify(object);
         },
       },

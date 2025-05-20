@@ -1,4 +1,4 @@
-import { INestApplication } from '@nestjs/common';
+import { INestApplication, NestApplicationOptions } from '@nestjs/common';
 import { FastifyAdapter } from '@nestjs/platform-fastify';
 import { DocumentBuilder, OpenAPIObject, SwaggerModule } from '@nestjs/swagger';
 import { Test } from '@nestjs/testing';
@@ -90,7 +90,7 @@ describe('redoc-module', () => {
       app = module.createNestApplication({
         initHttpServer: jest.fn(),
         getHttpServer: jest.fn(),
-      } as any);
+      } as NestApplicationOptions);
       const options = new DocumentBuilder()
         .setDescription('Test swagger Doc')
         .build();
