@@ -8,7 +8,7 @@ export interface RedocOptions {
   /** Logo Options */
   logo?: LogoOptions;
   /** Theme options */
-  theme?: any;
+  theme?: Record<string, unknown>;
   /** If set, the spec is considered untrusted and all HTML/markdown is sanitized to prevent XSS, by default is false */
   untrustedSpec?: boolean;
   /** If set, warnings are not rendered at the top of documentation (they are still logged to the console) */
