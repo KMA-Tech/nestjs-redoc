@@ -1,6 +1,6 @@
 {
-  "name": "nestjs-redoc",
-  "version": "3.0.0",
+  "name": "@placesapp/nestjs-redoc",
+  "version": "3.0.1",
   "description": "NestJS ReDoc frontend",
   "repository": "https://github.com/mxarc/nestjs-redoc",
   "author": "Alfonso Reyes",
@@ -16,7 +16,6 @@
     "prepublish:next": "npm run build",
     "publish:next": "npm publish --access public --tag next",
     "prepublish": "npm run build",
-    "publish": "npm publish --access public",
     "test": "jest",
     "test:watch": "jest --watch",
     "sample": "ts-node ./sample/main"
