@@ -1,6 +1,6 @@
 {
   "name": "@placesapp/nestjs-redoc",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "NestJS ReDoc frontend",
   "repository": "https://github.com/mxarc/nestjs-redoc",
   "author": "Alfonso Reyes",
