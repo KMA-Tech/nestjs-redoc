@@ -1,6 +1,6 @@
 {
   "name": "@placesapp/nestjs-redoc",
-  "version": "3.0.4",
+  "version": "3.0.5",
   "description": "NestJS ReDoc frontend",
   "repository": "https://github.com/mxarc/nestjs-redoc",
   "author": "Alfonso Reyes",
@@ -21,8 +21,8 @@
     "sample": "ts-node ./sample/main"
   },
   "peerDependencies": {
-    "@nestjs/common": "^11.1.5",
-    "@nestjs/core": "^11.1.5",
+    "@nestjs/common": "^11.1.6",
+    "@nestjs/core": "^11.1.6",
     "@nestjs/swagger": "^11.2.0",
     "reflect-metadata": "^0.2.2"
   },
