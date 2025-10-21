@@ -26,17 +26,17 @@ describe('redoc-module', () => {
 
     it('should run the setup (non-normalized path)', async () => {
       expect(RedocModule.setup('some/path', app, swagger, {})).resolves.toBe(
-        undefined
+        undefined,
       );
     });
     it('should run the setup (normalized path)', async () => {
       expect(RedocModule.setup('/some/path', app, swagger, {})).resolves.toBe(
-        undefined
+        undefined,
       );
     });
     it('should run the setup (normalized path 2)', async () => {
       expect(RedocModule.setup('/some/path/', app, swagger, {})).resolves.toBe(
-        undefined
+        undefined,
       );
     });
     it('shoudld be fine with the setup with logo options', async () => {
@@ -45,7 +45,7 @@ describe('redoc-module', () => {
           logo: {
             url: 'http://localhost:3333/test.png',
           },
-        })
+        }),
       ).resolves.toBe(undefined);
     });
     it('should server the documentation', async () => {
@@ -58,9 +58,7 @@ describe('redoc-module', () => {
       });
       await app.init();
       await request(app.getHttpServer()).get('/doc').expect(200);
-      await request(app.getHttpServer())
-        .get('/doc/swagger.json', (result) => console.log(result))
-        .expect(200);
+      await request(app.getHttpServer()).get('/doc/swagger.json').expect(200);
       await app.close();
     });
   });
@@ -75,12 +73,24 @@ describe('redoc-module', () => {
       swagger = SwaggerModule.createDocument(app, options);
     });
 
-    it('should throw an error for now', async () => {
-      try {
-        await RedocModule.setup('some/path', app, swagger, {});
-      } catch (error) {
-        expect(error.message).toBe('Fastify is not implemented yet');
-      }
+    it('should run the setup', async () => {
+      expect(RedocModule.setup('some/path', app, swagger, {})).resolves.toBe(
+        undefined,
+      );
+    });
+
+    it.skip('should server the documentation', async () => {
+      swagger.info = {
+        title: 'some title',
+        version: '0.1',
+      };
+      await RedocModule.setup('/doc', app, swagger, {
+        theme: {},
+      });
+      await app.init();
+      await request(app.getHttpServer()).get('/doc').expect(200);
+      await request(app.getHttpServer()).get('/doc/swagger.json').expect(200);
+      await app.close();
     });
   });
 

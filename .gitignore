@@ -2,6 +2,7 @@
 node_modules/
 dist/*
 !dist/.gitkeep
+.agents
 
 # Other files
 npm-debug.log
