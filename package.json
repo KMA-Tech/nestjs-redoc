@@ -1,6 +1,6 @@
 {
   "name": "@placesapp/nestjs-redoc",
-  "version": "3.1.0",
+  "version": "3.1.1",
   "description": "NestJS ReDoc frontend",
   "repository": "https://github.com/mxarc/nestjs-redoc",
   "author": "Alfonso Reyes",
@@ -28,8 +28,6 @@
   },
   "dependencies": {
     "@hapi/joi": "17.1.1",
-    "@nestjs/common": "11.1.6",
-    "@nestjs/swagger": "11.2.0",
     "express-basic-auth": "1.2.1",
     "express-handlebars": "8.0.1"
   },
