@@ -1,6 +1,6 @@
 {
   "name": "@placesapp/nestjs-redoc",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "NestJS Redoc frontend — placesapp fork with NestJS 11 + Fastify 5 support",
   "author": "jason@placesapp.io",
   "contributors": [
