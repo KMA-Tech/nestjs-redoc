@@ -53,9 +53,9 @@
     "reflect-metadata": "^0.1.13 || ^0.2.0"
   },
   "dependencies": {
-    "@hapi/joi": "17.1.1",
     "express-basic-auth": "1.2.1",
-    "express-handlebars": "8.0.1"
+    "express-handlebars": "8.0.1",
+    "joi": "17.13.3"
   },
   "devDependencies": {
     "@commitlint/cli": "19.6.0",
@@ -65,7 +65,6 @@
     "@nestjs/platform-fastify": "11.1.6",
     "@nestjs/testing": "11.1.6",
     "@types/express": "5.0.0",
-    "@types/hapi__joi": "17.1.14",
     "@types/jest": "29.5.14",
     "@types/node": "22.10.1",
     "@types/supertest": "6.0.2",
