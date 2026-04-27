@@ -3,6 +3,10 @@
   <h4 align="center">ReDoc powered frontend for your NestJS API spec</h4>
 </h1>
 
+> **Fork notice**: Originally [mxarc/nestjs-redoc](https://github.com/mxarc/nestjs-redoc)
+> by Alfonso Reyes (MIT). Maintained by KMA-Tech as `@placesapp/nestjs-redoc` with
+> NestJS 11 + Fastify 5 support.
+
 <div align="center">
   <a href="http://makeapullrequest.com">
     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs welcome" />
