@@ -1,9 +1,27 @@
 {
   "name": "@placesapp/nestjs-redoc",
   "version": "3.1.1",
-  "description": "NestJS ReDoc frontend",
-  "repository": "https://github.com/mxarc/nestjs-redoc",
-  "author": "Alfonso Reyes",
+  "description": "NestJS Redoc frontend — placesapp fork with NestJS 11 + Fastify 5 support",
+  "author": "jason@placesapp.io",
+  "contributors": [
+    "Alfonso Reyes (https://github.com/mxarc)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KMA-Tech/nestjs-redoc.git"
+  },
+  "homepage": "https://github.com/KMA-Tech/nestjs-redoc#readme",
+  "bugs": {
+    "url": "https://github.com/KMA-Tech/nestjs-redoc/issues"
+  },
+  "keywords": [
+    "nestjs",
+    "redoc",
+    "openapi",
+    "swagger",
+    "documentation",
+    "fastify"
+  ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
