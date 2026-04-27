@@ -1,35 +1,61 @@
 {
   "name": "@placesapp/nestjs-redoc",
-  "version": "3.1.1",
-  "description": "NestJS ReDoc frontend",
-  "repository": "https://github.com/mxarc/nestjs-redoc",
-  "author": "Alfonso Reyes",
+  "version": "4.0.1",
+  "description": "NestJS Redoc frontend — placesapp fork with NestJS 11 + Fastify 5 support",
+  "author": "jason@placesapp.io",
+  "contributors": [
+    "Alfonso Reyes (https://github.com/mxarc)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KMA-Tech/nestjs-redoc.git"
+  },
+  "homepage": "https://github.com/KMA-Tech/nestjs-redoc#readme",
+  "bugs": {
+    "url": "https://github.com/KMA-Tech/nestjs-redoc/issues"
+  },
+  "keywords": [
+    "nestjs",
+    "redoc",
+    "openapi",
+    "swagger",
+    "documentation",
+    "fastify"
+  ],
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/",
+    "views/",
+    "README.md",
+    "LICENSE"
+  ],
   "private": false,
   "license": "MIT",
+  "publishConfig": {
+    "access": "restricted"
+  },
   "scripts": {
     "prebuild": "rimraf ./dist",
     "build": "tsc -p ./tsconfig.build.json",
     "format": "prettier --write \"./src/**/*.ts\"",
     "format:check": "prettier --check \"./src/**/*.ts\"",
     "lint": "eslint \"./src/**/*.ts\" --fix",
-    "prepublish:next": "npm run build",
-    "publish:next": "npm publish --access public --tag next",
-    "prepublish": "npm run build",
+    "prepublishOnly": "npm run build",
     "test": "jest",
     "test:watch": "jest --watch",
     "sample": "ts-node ./sample/main"
   },
   "peerDependencies": {
-    "@nestjs/common": "^11.1.6",
-    "@nestjs/core": "^11.1.6",
-    "@nestjs/swagger": "^11.2.0",
-    "reflect-metadata": "^0.2.2"
+    "@nestjs/common": "^10.0.0 || ^11.0.0",
+    "@nestjs/core": "^10.0.0 || ^11.0.0",
+    "@nestjs/swagger": "^7.0.0 || ^8.0.0 || ^11.0.0",
+    "reflect-metadata": "^0.1.13 || ^0.2.0"
   },
   "dependencies": {
-    "@hapi/joi": "17.1.1",
     "express-basic-auth": "1.2.1",
-    "express-handlebars": "8.0.1"
+    "express-handlebars": "8.0.1",
+    "joi": "17.13.3"
   },
   "devDependencies": {
     "@commitlint/cli": "19.6.0",
@@ -39,7 +65,6 @@
     "@nestjs/platform-fastify": "11.1.6",
     "@nestjs/testing": "11.1.6",
     "@types/express": "5.0.0",
-    "@types/hapi__joi": "17.1.14",
     "@types/jest": "29.5.14",
     "@types/node": "22.10.1",
     "@types/supertest": "6.0.2",

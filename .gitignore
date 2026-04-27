@@ -1,7 +1,6 @@
 # Ignored folders
 node_modules/
-dist/*
-!dist/.gitkeep
+dist/
 .agents
 
 # Other files
