@@ -29,10 +29,10 @@
     "sample": "ts-node ./sample/main"
   },
   "peerDependencies": {
-    "@nestjs/common": "^11.1.6",
-    "@nestjs/core": "^11.1.6",
-    "@nestjs/swagger": "^11.2.0",
-    "reflect-metadata": "^0.2.2"
+    "@nestjs/common": "^10.0.0 || ^11.0.0",
+    "@nestjs/core": "^10.0.0 || ^11.0.0",
+    "@nestjs/swagger": "^7.0.0 || ^8.0.0 || ^11.0.0",
+    "reflect-metadata": "^0.1.13 || ^0.2.0"
   },
   "dependencies": {
     "@hapi/joi": "17.1.1",
